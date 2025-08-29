@@ -1,0 +1,84 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("{{ url_for('static', filename='static/bg.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 400px;
+}
+
+/* Titles */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form elements */
+input[type="file"] {
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.button, input[type="submit"] {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover, input[type="submit"]:hover {
+    background: #218838;
+}
+
+/* Back button */
+.back-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}
+
+/* Result table */
+.result-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.result-table th {
+    background-color: #f2f2f2;
+}
